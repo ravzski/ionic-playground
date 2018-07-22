@@ -1,0 +1,55 @@
+page-login {
+  .login-content {
+    background-color: #000;
+  }
+  form {
+    height: 100%;
+    display: block;
+    vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 30px;
+    .item-block {
+      min-height: 6rem !important;
+    }
+    img {
+      width: 100px;
+      text-align: center;
+      margin: 0px auto 150px auto;
+    }
+  }
+
+  ion-item {
+    border-radius: 35px;
+    margin-bottom: 10px !important;
+    text-align: center;
+  }
+
+  input {
+    text-align: center;
+  }
+
+  button {
+    background-color: #f2c400;
+    height: 6rem !important;
+    color: #fff !important;
+  }
+
+  .scroll-content {
+    display: table !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding-bottom: 0px !important;
+  }
+
+  .img-header {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50px;
+    img {
+      width: 100px;
+    }
+  }
+
+}

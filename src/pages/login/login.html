@@ -1,0 +1,33 @@
+<ion-content class="login-content" padding="true" scroll="false">
+
+  <div class="img-header">
+    <ion-col text-center>
+      <img src="./assets/imgs/header.png">
+    </ion-col>
+  </div>
+
+  <form class="login-form auth-form" [formGroup]="login" (ngSubmit)="doLogin()">
+
+
+    <ion-item>
+      <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+    </ion-item>
+
+      <ion-item>
+        <ion-input type="password" placeholder="Password" formControlName="password" show-hide-input></ion-input>
+      </ion-item>
+
+    <button [color]="primary" ion-button round ion-button block class="auth-action-button login-button" type="submit" [disabled]="!login.valid">Login</button>
+  </form>
+
+
+
+</ion-content>
+
+<ion-footer no-shadow>
+  <div class="bg-header">
+    <ion-col text-center>
+      <img src="./assets/imgs/bg.png">
+    </ion-col>
+  </div>
+</ion-footer>

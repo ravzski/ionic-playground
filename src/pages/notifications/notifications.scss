@@ -1,0 +1,95 @@
+$white: #FFFFFF;
+$white-a: darken($white, 3%);
+$white-b: darken($white, 6%);
+$white-c: darken($white, 12%);
+$white-d: darken($white, 24%);
+
+$black: rgba(#000000, .8);
+$black-a: lighten($black, 10%);
+$black-b: lighten($black, 20%);
+$black-c: lighten($black, 40%);
+$black-d: lighten($black, 60%);
+
+$theme-color-1: #00e9d5;
+$theme-color-2: #ae75e7;
+$theme-color-3: #5e5874;
+
+notifications-page {
+	.notifications-content
+	{
+		.notifications-divider
+		{
+			font-size: 1.2rem;
+			font-weight: 500;
+			letter-spacing: 0.9px;
+			color: #f2c400;
+
+			&:not(:first-child)
+			{
+				padding-top: 30px;
+			}
+		}
+
+		.notification-item
+		{
+			padding: 12px;
+			border: none;
+			box-shadow: inset 0 -0.5px 0 0 #000;
+			align-items: flex-start;
+
+			ion-avatar {
+				flex: 0 0 16%;
+		    max-width: 16%;
+				margin: 0px;
+				align-self: flex-start;
+				margin: 0 16px 0 0!important;
+
+				.user-image
+				{
+					border-radius: 50%;
+				}
+			}
+
+			.item-inner
+			{
+				padding: 0px;
+				padding-left: 12px;
+				border: none;
+				margin-top: 8px;
+
+				ion-label {
+					margin: 0px;
+				}
+			}
+
+			.item-title
+			{
+				font-size: 1.4rem;
+				font-weight: 500;
+				letter-spacing: 0.2px;
+				color: $theme-color-2;
+				margin-bottom: 4px;
+			}
+
+			.item-description
+			{
+				font-size: 1.2rem;
+				letter-spacing: 0.2px;
+				color: $white-d;
+				text-overflow: initial;
+			  overflow: initial;
+			  white-space: initial;
+			}
+
+			.item-time
+			{
+				font-size: 1.2rem;
+				font-weight: 500;
+				color: $white-d;
+				margin: 0px;
+				padding-left: 8px;
+				align-self: flex-start;
+			}
+		}
+	}
+}
