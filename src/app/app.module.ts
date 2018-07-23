@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
 import { NotificationsPage } from '../pages/notifications/notifications';
+import { ProfilePage } from '../pages/profile/profile';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -33,6 +34,7 @@ import { BackgroundImage } from '../components/background-image/background-image
     TabsNavigationPage,
     PreloadImage,
     BackgroundImage,
+    ProfilePage,
     KidsPage
   ],
   imports: [
@@ -47,6 +49,7 @@ import { BackgroundImage } from '../components/background-image/background-image
     HomePage,
     LoginPage,
     ListPage,
+    ProfilePage,
     NotificationsPage,
     TabsNavigationPage,
     KidsProfilePage,

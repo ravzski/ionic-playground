@@ -1,0 +1,75 @@
+<ion-header class="listing-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>Profile Setting</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="notifications-content">
+
+  <div class="notification-group">
+
+
+    <div class="notification-item divider school-form ">
+      <ion-grid>
+        <ion-row>
+          <ion-col offset-1 >
+            <span class="label dark strong">Email</span>
+          </ion-col>
+          <ion-col col-7>
+            <input placeholder="Text Input" type="text"/>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col offset-1 >
+            <span class="label dark strong">First Name</span>
+          </ion-col>
+          <ion-col col-7>
+            <input placeholder="Text Input" type="text"/>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col offset-1 >
+            <span class="label dark strong">Last Name</span>
+          </ion-col>
+          <ion-col col-7>
+            <input placeholder="Text Input" type="text"/>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col offset-1 >
+            <span class="label dark strong">
+              Relationship
+              <br/>to Student</span>
+          </ion-col>
+          <ion-col col-7>
+            <input placeholder="Text Input" type="text"/>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col col-6 offset-6>
+            <button [color]="primary" ion-button round ion-button block class="auth-action-button login-button" type="submit">Submit</button>
+          </ion-col>
+        </ion-row>
+
+
+      </ion-grid>
+    </div>
+
+
+
+
+  </div>
+</ion-content>

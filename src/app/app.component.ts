@@ -10,6 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { KidsPage } from '../pages/kids/kids';
+import { ProfilePage } from '../pages/profile/profile';
 
 @Component({
   templateUrl: 'app.html'
@@ -27,8 +28,8 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'My Kids', component: KidsPage, icon: "ios-people-outline" },
-      { title: 'Profile', component: LoginPage, icon: "ios-person-outline"},
-      { title: 'Change Password', component: ListPage, icon: "ios-cog-outline" }
+      { title: 'Profile', component: ProfilePage, icon: "ios-person-outline"},
+      { title: 'Change Password', component: ProfilePage, icon: "ios-cog-outline" }
     ];
 
   }
