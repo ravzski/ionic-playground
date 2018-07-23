@@ -1,0 +1,48 @@
+<ion-header class="listing-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center> My Kids</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="notifications-content">
+
+  <div class="notification-group">
+    <div class="notification-item" (click)="viewDetails()">
+      <ion-grid>
+        <ion-row>
+          <ion-col text-center>
+            <span class="blue strong">Toby</span>
+          </ion-col>
+          <ion-col col-7>
+            <span class="dark">Senior Nursery</span><br/>
+            <span class="yellow">Cambridge Preschool</span><br/>
+            <span class="grey">2018-2019</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div class="notification-item" (click)="viewDetails()">
+      <ion-grid>
+        <ion-row>
+          <ion-col text-center>
+            <span class="blue strong">Zoe</span>
+          </ion-col>
+          <ion-col col-7>
+            <span class="dark">Senior Nursery</span><br/>
+            <span class="yellow">Cambridge Preschool</span><br/>
+            <span class="grey">2018-2019</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

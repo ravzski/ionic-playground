@@ -106,7 +106,7 @@ $colors: (
 @import "noto-sans";
 
 ion-header {
-  .toolbar {
+  .toolbar, .toolbar-ios {
 
     .toolbar-background {
       background: transparent;
@@ -115,6 +115,10 @@ ion-header {
       color: map-get($colors, primary);
     }
   }
+}
+
+.header-ios .toolbar-background-ios {
+  border: 0px !important;
 }
 
 .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
@@ -133,7 +137,6 @@ ion-header {
 .tabs-md .tab-button[aria-selected=true] {
   border-bottom: 2px solid #6562a4;
 }
-
 
 
 ion-menu {
@@ -188,9 +191,12 @@ ion-menu {
 			}
       .label-md {
         text-overflow: unset;
-white-space: normal;
+        white-space: normal;
       }
-
+      .label-ios {
+        text-overflow: unset;
+        white-space: normal;        
+      }
 			&.activated
 			{
   			transition-duration: 0ms;
@@ -209,6 +215,36 @@ white-space: normal;
 	}
 }
 
+.tabs-ios .tabbar {
+  background-color: #f2c400  !important;
+  padding: 15px 0px !important;
+  border: 0px !important;
+}
+
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+  color: #fff !important;
+}
+
 .menu-inner{
     width: 150px !important;
+}
+
+.dark {
+  color: #4A4A4A;
+}
+
+.yellow {
+  color: #f2c400;
+}
+
+.grey {
+  color: #c2c2c2;
+}
+
+.blue {
+  color: #1B93C0;
+}
+
+.strong {
+  font-weight: 800;
 }

@@ -9,6 +9,7 @@ import { LoginPage } from '../pages/login/login';
 
 import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
 import { NotificationsPage } from '../pages/notifications/notifications';
+import { KidsPage } from '../pages/kids/kids';
 
 @Component({
   templateUrl: 'app.html'
@@ -18,14 +19,14 @@ export class MyApp {
 
   rootPage: any = LoginPage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'My Kids', component: HomePage, icon: "ios-people-outline" },
+      { title: 'My Kids', component: KidsPage, icon: "ios-people-outline" },
       { title: 'Profile', component: LoginPage, icon: "ios-person-outline"},
       { title: 'Change Password', component: ListPage, icon: "ios-cog-outline" }
     ];

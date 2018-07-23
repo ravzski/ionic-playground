@@ -32,22 +32,31 @@ notifications-page {
 
 		.notification-item
 		{
-			padding: 12px;
+			padding: 5px 0px 20px 0px;
 			border: none;
-			box-shadow: inset 0 -0.5px 0 0 #000;
 			align-items: flex-start;
+			border-bottom: 1px solid #ececec;
+	    border-left: 1px solid #ececec;
+			margin-left: 50px;
+			padding-left: 95px;
+			padding-right: 50px;
+			position: relative;
 
-			ion-avatar {
-				flex: 0 0 16%;
-		    max-width: 16%;
-				margin: 0px;
-				align-self: flex-start;
-				margin: 0 16px 0 0!important;
 
-				.user-image
-				{
-					border-radius: 50%;
-				}
+			.notif-icon {
+				position: absolute;
+		    left: -17px;
+		    width: 35px;
+		    border-radius: 50%;
+		    top: 13px;
+			}
+
+			&:last-child {
+				border-bottom: 0px;
+			}
+
+			&:first {
+				margin-top: 40px;
 			}
 
 			.item-inner
@@ -73,9 +82,9 @@ notifications-page {
 
 			.item-description
 			{
-				font-size: 1.2rem;
+				font-size: 1.4rem;
 				letter-spacing: 0.2px;
-				color: $white-d;
+				color: #1D1D26;
 				text-overflow: initial;
 			  overflow: initial;
 			  white-space: initial;
@@ -91,5 +100,32 @@ notifications-page {
 				align-self: flex-start;
 			}
 		}
+	}
+
+	.notification-group {
+		margin-top: 40px;
+	}
+
+	ion-item-group {
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+
+	.date {
+		position: absolute;
+    left: 35px;
+    top: 20px;
+    font-size: 11px;
+    color: #c2c2c2;
+	}
+
+	.from {
+		font-weight: 800;
+		color: #F44E4B;
+	}
+
+	.tags {
+		color: #f2c400;
+		display: block;
 	}
 }

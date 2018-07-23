@@ -13,6 +13,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { NotificationsService } from '../pages/notifications/notifications.service';
+import { KidsPage } from '../pages/kids/kids';
+import { KidsProfilePage } from '../pages/kids-profile/kids';
 
 import { HttpModule } from '@angular/http';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -27,9 +29,11 @@ import { BackgroundImage } from '../components/background-image/background-image
     LoginPage,
     ListPage,
     NotificationsPage,
+    KidsProfilePage,
     TabsNavigationPage,
     PreloadImage,
-    BackgroundImage
+    BackgroundImage,
+    KidsPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import { BackgroundImage } from '../components/background-image/background-image
     LoginPage,
     ListPage,
     NotificationsPage,
-    TabsNavigationPage
+    TabsNavigationPage,
+    KidsProfilePage,
+    KidsPage
   ],
   providers: [
     StatusBar,

@@ -3,38 +3,26 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-
     <ion-title text-center> Notification</ion-title>
-
-
     <ion-buttons end>
       <button ion-button icon-only (click)="openModal()">
         <ion-icon name="options"></ion-icon>
       </button>
     </ion-buttons>
-
   </ion-navbar>
 </ion-header>
 
 <ion-content class="notifications-content">
-  <ion-item-group>
-    <ion-item-divider class="notifications-divider">wer</ion-item-divider>
-    <ion-item class="notification-item" *ngFor="let notification of notifications.today">
-      <ion-avatar item-left>
-        <preload-image class="user-image" [ratio]="{w:1, h:1}" [src]="notification.image"></preload-image>
-      </ion-avatar>
-      <h2 class="item-title">{{notification.name}}</h2>
-      <p class="item-description">{{notification.message}}</p>
-      <ion-note class="item-time" item-right>{{notification.date}}</ion-note>
-    </ion-item>
-    <ion-item-divider class="notifications-divider">Yesterday</ion-item-divider>
-    <ion-item class="notification-item" *ngFor="let notification of notifications.yesterday">
-      <ion-avatar item-left>
-        <preload-image class="user-image" [ratio]="{w:1, h:1}" [src]="notification.image"></preload-image>
-      </ion-avatar>
-      <h2 class="item-title">{{notification.name}}</h2>
-      <p class="item-description">{{notification.message}}</p>
-      <ion-note class="item-time" item-right>{{notification.date}}</ion-note>
-    </ion-item>
-  </ion-item-group>
+
+  <div class="notification-group">
+    <div class="notification-item" *ngFor="let notification of notifications.today">
+      <img [src]="notification.image" class="notif-icon"/>
+      <span class="date">June 11</span>
+      <p class="item-description">
+        <span class="from">Teacher K: </span>
+        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</span>
+        <span class="tags">Tag X, Tag Y</span>
+      </p>
+    </div>
+  </div>
 </ion-content>
